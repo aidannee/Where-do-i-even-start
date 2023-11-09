@@ -33,7 +33,6 @@ function App() {
     if (!voiceActivated) return;
     annyang.start();
     annyang.addCallback("result", (userSaid) => {
-      console.log("User may have said:", userSaid);
       setVoiceActivated(false);
       handleVoiceSubmit(userSaid[0]);
     });
@@ -51,7 +50,7 @@ function App() {
 
   useEffect(() => {
     if (DEBUG_MODE) return;
-    console.log(">>>>>>>", raw);
+
     attemptToParseURLH(raw, data, setData, smokeAlarm, setSmokeAlarm);
   }, [raw]);
 

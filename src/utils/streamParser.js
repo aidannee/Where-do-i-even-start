@@ -236,9 +236,6 @@ function attemptToParseURLH(
   // }
 
   const data = { ...original_data };
-  console.log(raw);
-  console.log(original_data);
-  console.log(setData);
 
   const joined_chunks = raw.join("");
   const split_on_valid_ends = joined_chunks.split("\n");
@@ -271,7 +268,7 @@ function attemptToParseURLH(
         ? (data[key[0]][key[1]][key[2]] = value)
         : (data[key[0]][key[1]] = value);
     });
-  console.log(data);
+
   setData(data);
 }
 

@@ -1,14 +1,12 @@
 import { useState } from "react";
 
 function List({ substeps, streamingFinished, setStreamingFinished }) {
-  console.log(substeps);
   const [list, setList] = useState(substeps);
   const [textValue, setTextValue] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [addingNewItem, setAddingNewItem] = useState(false);
 
   function deleteItem(i) {
-    console.log("deleting item " + i);
     const filteredItems = list.filter((item, j) => j !== i);
     setList(filteredItems);
   }
@@ -21,7 +19,6 @@ function List({ substeps, streamingFinished, setStreamingFinished }) {
       newState.push(textValue);
       setList(newState);
       setTextValue("");
-      console.log(newState);
     }
   }
 

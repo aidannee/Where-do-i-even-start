@@ -19,8 +19,7 @@ export default function Form({
     setInitialLoad(false);
     setStreamingFinished(false);
     e.preventDefault();
-    console.log("test");
-    console.log(e.target.elements.userInputField.value);
+
     socket.emit("user-prompt", e.target.elements.userInputField.value);
   }
   function newRequest(e) {
