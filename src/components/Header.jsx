@@ -3,7 +3,7 @@ import React from "react";
 export default function Header() {
   return (
     <>
-      <div className="wrapperStyle text-center w-2/3">
+      <div className="wrapperStyle text-center">
         {" "}
         <h1 className=" itemTitle text-4xl my-5"> WHERE DO I EVEN START?!</h1>
         <p className=" p-1">

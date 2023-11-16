@@ -1,13 +1,12 @@
 body {
   background-color: #dba9d4;
   font-family: "Sono", monospace;
-  padding-top: 5%;
-  padding-bottom: 5%;
+
   width: 100%;
   margin: 0 auto; /* This centers the body horizontally */
 }
 .wrapping {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
 }
 .itemTitle {

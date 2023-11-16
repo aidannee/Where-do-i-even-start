@@ -5,15 +5,7 @@ import io from "socket.io-client";
 import { chunks, attemptToParseURLH } from "./utils/streamParser";
 import List from "./components/List";
 import "./App.css";
-const DEBUG_MODE = false;
-
-// "enum"
-// const APP_STATES = [
-//   "page_loaded",
-//   "prompt_response_active",
-//   "prompt_response_finished",
-//   "prompt_response_error",
-// ];
+const DEBUG_MODE = true;
 
 function App() {
   const [counter, setCounter] = useState(0);
@@ -106,7 +98,7 @@ function App() {
     );
   } else {
     return (
-      <div className="wrapping flex flex-col items-center h-full">
+      <div className="wrapping w-[95%] md:w-[80%] flex flex-col items-center h-full">
         <Header />
         <Form
           voiceActivated={voiceActivated}
@@ -121,23 +113,27 @@ function App() {
         />
 
         {Object.keys(data).length > 0 && (
-          <div className="wrapperStyle max-w-5xl  flex flex-col p-3">
+          <div className="wrapperStyle flex flex-col mb-20">
             {" "}
-            <div className="flex">
+            <div className="flex  flex-col md:flex-row m-2">
               {Object.keys(data).map((key) => (
-                <div className="flex-1 m-1" key={key}>
+                <div className="flex-1" key={key}>
                   <div className="w-full itemStyle mb-5 p-4 text-center">
-                    <h1 className="itemTitle text-xl">{key}</h1>
+                    <h1 className="itemTitle text-md md:text-xl">{key}</h1>
                     <h2>{data[key].description}</h2>
                   </div>
+                  <div className="flex-1 m-1" key={key}>
+                    <List
+                      substeps={data[key].substeps}
+                      socket={socket}
+                      setVoiceActivated={setVoiceActivated}
+                      streamingFinished={streamingFinished}
+                    />
+                  </div>
                 </div>
-              ))}{" "}
-              {/* DELETEME */}
-            </div>{" "}
-            {/* DELETEME */}
-            <div className="flex">
-              {" "}
-              {/* DELETEME */}
+              ))}
+            </div>
+            {/* <div className="flex">
               {Object.keys(data).map((key) => (
                 <div className="flex-1 m-1" key={key}>
                   <List
@@ -148,7 +144,7 @@ function App() {
                   />
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         )}
       </div>
