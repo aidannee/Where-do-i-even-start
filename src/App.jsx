@@ -5,7 +5,7 @@ import io from "socket.io-client";
 import { chunks, attemptToParseURLH } from "./utils/streamParser";
 import List from "./components/List";
 import "./App.css";
-const DEBUG_MODE = true;
+const DEBUG_MODE = false;
 
 function App() {
   const [counter, setCounter] = useState(0);
