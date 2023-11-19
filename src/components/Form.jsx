@@ -56,7 +56,10 @@ export default function Form({
               </button>
             )}
           </div>
-          {!initialLoad ? (
+
+          {/* VOICE ACTIVATION BUTTON */}
+
+          {!initialLoad || window.innerWidth <= 768 ? (
             ""
           ) : (
             <button
