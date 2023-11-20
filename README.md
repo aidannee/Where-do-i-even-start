@@ -14,7 +14,7 @@ The frontend of this project is built using React and styled using Tailwind CSS.
 ![inspo 2](https://i.ytimg.com/vi/7Vd_AXGYAqo/maxresdefault.jpg)
 
 ### Backend (Explanation)
-The backend code, written in Node.js using Express, incorporates the ChatGPT API provided by OpenAI. It functions as a socket-based server utilizing the Socket.IO library to enable real-time communication between the frontend and the AI model.
+The backend code using Express, incorporates the ChatGPT API provided by OpenAI. It functions as a socket-based server utilizing the Socket.IO library to enable real-time communication between the frontend and the AI model.
 
 The server listens for user prompts and utilizes the GPT-4 model from OpenAI to generate dynamic responses. Upon receiving user prompts related to travel or relocation, it processes the requests and generates a JSON-formatted to-do list that follows specific URL-like formatting for different categories and subcategories.
 
