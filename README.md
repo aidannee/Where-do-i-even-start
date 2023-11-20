@@ -8,6 +8,10 @@ This project is a full-stack application built with React, Tailwind CSS, Socket.
 - Real-time Streaming: The backend streams JSON-formatted todo list data to the frontend in response to user queries.
 - Neumorphism-inspired Styling: The user interface design is inspired by a blend of bento boxes, Japanese candy making kits, and pill containers.
 
+
+<img src="https://images.unsplash.com/photo-1596463059283-da257325bab8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
+<img src="https://i.ytimg.com/vi/7Vd_AXGYAqo/maxresdefault.jpg"></img>
+
 ## Project Structure
 - **Frontend**: Built with React, the frontend interacts with the AI backend through Socket.IO to display generated todo lists.
 - **Backend**: The backend is powered by Express, integrating the OpenAI GPT API to process user prompts and generate task lists. Socket.IO facilitates real-time communication between the frontend and backend.
@@ -29,9 +33,5 @@ This project was developed as the final project for a Fullstack course at BIT.
 
 Feel free to contribute, report issues, or suggest improvements by creating pull requests or raising issues!
 
-<img src="https://images.unsplash.com/photo-1596463059283-da257325bab8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
-
-
-<img src="https://i.ytimg.com/vi/7Vd_AXGYAqo/maxresdefault.jpg"></img>
 
 
