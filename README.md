@@ -11,3 +11,40 @@ The stlying inspired by a cross between bento boxes, japanese candy making kits 
 
 
 <img src="https://i.ytimg.com/vi/7Vd_AXGYAqo/maxresdefault.jpg"></img>
+
+
+# AI-Powered Todo List Generator
+
+## Overview
+This project is a full-stack application built with React, Tailwind CSS, Socket.IO, and Express that utilizes the OpenAI GPT API to generate todo lists for travel-related tasks. It assists users in organizing their plans and tasks when relocating or planning a trip.
+
+## Features
+- AI-powered Todo List Generation: The application uses the OpenAI GPT API to generate todo lists based on user prompts related to travel or relocation.
+- Real-time Streaming: The backend streams JSON-formatted todo list data to the frontend in response to user queries.
+- Neumorphism-inspired Styling: The user interface design is inspired by a blend of bento boxes, Japanese candy making kits, and pill containers.
+
+## Project Structure
+- **Frontend**: Built with React, the frontend interacts with the AI backend through Socket.IO to display generated todo lists.
+- **Backend**: The backend is powered by Express, integrating the OpenAI GPT API to process user prompts and generate task lists. Socket.IO facilitates real-time communication between the frontend and backend.
+
+## Getting Started
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Set up environment variables by creating a `.env` file and adding the OpenAI API key.
+4. Start the server using `npm start`.
+5. Launch the frontend application using `npm start` in the client directory.
+
+## Usage
+- Access the application in your browser.
+- Enter prompts related to travel or relocation in the provided input field.
+- View the generated JSON-formatted todo list as a response to your queries.
+
+
+![Screenshot 1](https://images.unsplash.com/photo-1596463059283-da257325bab8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+![Screenshot 2](https://i.ytimg.com/vi/7Vd_AXGYAqo/maxresdefault.jpg)
+
+## Acknowledgments
+This project was developed as the final project for a Fullstack course at [Your Institute Name/Bit]. Special thanks to [Instructor Name/Contributors] for guidance and support.
+
+Feel free to contribute, report issues, or suggest improvements by creating pull requests or raising issues!
+
