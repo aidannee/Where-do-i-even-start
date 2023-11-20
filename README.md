@@ -1,37 +1,35 @@
 # Where-do-i-even-start
 
-## Overview
-This project is a full-stack application built with React, Tailwind CSS, Socket.IO, and Express that utilizes the OpenAI GPT API to generate todo lists for travel-related tasks. It assists users in organizing their plans and tasks when relocating or planning a trip.
+Ever found yourself planning to move to a new city or country but struggled to organize your thoughts and tasks? This app is designed to assist you! With the help of AI, you can generate a personalized to-do list tailored to your travel or relocation needs. You can further modify, add, or delete tasks as per your preferences!
 
-## Features
-- AI-powered Todo List Generation: The application uses the OpenAI GPT API to generate todo lists based on user prompts related to travel or relocation.
-- Real-time Streaming: The backend streams JSON-formatted todo list data to the frontend in response to user queries.
-- Neumorphism-inspired Styling: The user interface design is inspired by a blend of bento boxes, Japanese candy making kits, and pill containers.
+This project was created as part of my final assignment during my Fullstack course at BIT, aiming to combine AI capabilities with practical usability.
+
+## Project Overview
+
+### Frontend
+The frontend of this project is built using React and styled using Tailwind CSS. The design inspiration drew from a fusion of bento boxes, Japanese candy-making kits, and pill containers. During the development phase, I explored Neumorphism, which influenced the overall aesthetic of the user interface.
+
+![inspo 1](https://images.unsplash.com/photo-1596463059283-da257325bab8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+![inspo 2](https://i.ytimg.com/vi/7Vd_AXGYAqo/maxresdefault.jpg)
+
+### Backend (Explanation)
+The backend code, written in Node.js using Express, incorporates the ChatGPT API provided by OpenAI. It functions as a socket-based server utilizing the Socket.IO library to enable real-time communication between the frontend and the AI model.
+
+The server listens for user prompts and utilizes the GPT-4 model from OpenAI to generate dynamic responses. Upon receiving user prompts related to travel or relocation, it processes the requests and generates a JSON-formatted to-do list that follows specific URL-like formatting for different categories and subcategories.
 
 
-<img src="https://images.unsplash.com/photo-1596463059283-da257325bab8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
-<img src="https://i.ytimg.com/vi/7Vd_AXGYAqo/maxresdefault.jpg"></img>
+## How to Use
+To run this project locally, follow these steps:
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd <project-folder>`
+3. Install dependencies: `npm install`
+4. Set up environment variables: Create a `.env` file and add your OpenAI API key as `OPENAI_API_KEY=<your-api-key>`
+5. Start the frontend: `npm start`
 
-## Project Structure
-- **Frontend**: Built with React, the frontend interacts with the AI backend through Socket.IO to display generated todo lists.
-- **Backend**: The backend is powered by Express, integrating the OpenAI GPT API to process user prompts and generate task lists. Socket.IO facilitates real-time communication between the frontend and backend.
+Feel free to explore the codebase, customize features, and enhance functionalities to suit your needs!
 
-## Getting Started
-1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Set up environment variables by creating a `.env` file and adding the OpenAI API key.
-4. Start the server using `npm start`.
-5. Launch the frontend application using `npm start` in the client directory.
-
-## Usage
-- Access the application in your browser.
-- Enter prompts related to travel or relocation in the provided input field.
-- View the generated JSON-formatted todo list as a response to your queries.
-
-## Acknowledgments
-This project was developed as the final project for a Fullstack course at BIT.
-
-Feel free to contribute, report issues, or suggest improvements by creating pull requests or raising issues!
-
+### Note
+For the backend functionality and detailed setup instructions, please refer to the separate README file provided in the backend directory.
 
 
